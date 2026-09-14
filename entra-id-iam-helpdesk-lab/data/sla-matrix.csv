@@ -1,0 +1,5 @@
+Priority,TargetMinutes,Example
+P1,15,Immediate termination or suspected unauthorized access
+P2,60,Blocked start-day access or urgent access removal
+P3,240,Standard joiner/mover/access request
+P4,480,Routine review or documentation task

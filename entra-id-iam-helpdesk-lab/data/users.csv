@@ -1,0 +1,21 @@
+EmployeeId,DisplayName,Department,JobTitle,Manager,Alias,UPN,AccountEnabled,EvidenceStatus,UsageLocation,LicenseProfile
+NSG001,Amina Jacobs,Finance,Financial Analyst,Lerato Mokoena,amina.jacobs,amina.jacobs@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG002,Thabo Nkosi,Finance,Accounts Officer,Lerato Mokoena,thabo.nkosi,thabo.nkosi@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG003,Naledi Khumalo,Finance,Finance Manager,Lerato Mokoena,naledi.khumalo,naledi.khumalo@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG004,Zanele Dube,People Operations,HR Coordinator,Mpho Cele,zanele.dube,zanele.dube@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG005,Karabo Molefe,People Operations,Talent Specialist,Mpho Cele,karabo.molefe,karabo.molefe@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG006,Mpho Cele,People Operations,HR Manager,Aisha Naidoo,mpho.cele,mpho.cele@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG007,Sipho Ndlovu,Sales,Account Executive,Jason Smith,sipho.ndlovu,sipho.ndlovu@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG008,Lwazi Mthembu,Sales,Sales Development Rep,Jason Smith,lwazi.mthembu,lwazi.mthembu@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG009,Priya Pillay,Sales,Account Manager,Jason Smith,priya.pillay,priya.pillay@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG010,Jason Smith,Sales,Sales Manager,Aisha Naidoo,jason.smith,jason.smith@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG011,Neo Motloung,Engineering,Software Engineer,Emma van Wyk,neo.motloung,neo.motloung@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG012,Kea Maseko,Engineering,Software Engineer,Emma van Wyk,kea.maseko,kea.maseko@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG013,Daniel Botha,Engineering,DevOps Engineer,Emma van Wyk,daniel.botha,daniel.botha@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG014,Emma van Wyk,Engineering,Engineering Manager,Aisha Naidoo,emma.vanwyk,emma.vanwyk@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG015,Lebo Radebe,IT,IT Support Technician,Trust Lab Admin,lebo.radebe,lebo.radebe@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG016,Sam Naicker,IT,IAM Analyst,Trust Lab Admin,sam.naicker,sam.naicker@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG017,Ayanda Mhlongo,IT,Systems Administrator,Trust Lab Admin,ayanda.mhlongo,ayanda.mhlongo@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG018,Faith Zwane,IT,Service Desk Analyst,Trust Lab Admin,faith.zwane,faith.zwane@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG019,Tumi Sibiya,Finance,Junior Analyst,Naledi Khumalo,tumi.sibiya,tumi.sibiya@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab
+NSG020,Rethabile Moagi,Sales,Sales Operations Analyst,Jason Smith,rethabile.moagi,rethabile.moagi@YOURTENANT.onmicrosoft.com,TRUE,Designed,ZA,M365-Standard-Lab

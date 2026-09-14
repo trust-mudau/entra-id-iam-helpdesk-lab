@@ -1,0 +1,13 @@
+ApprovalId,TicketId,Approver,Decision,Scope,EvidenceStatus
+APR-001,IAM-001,Finance manager,Approved,Baseline Finance access + M365 profile,Synthetic approval record
+APR-002,IAM-002,Sales manager,Approved,Sales onboarding,Synthetic approval record
+APR-003,IAM-003,Finance director,Approved,Payment approver access,Synthetic approval record
+APR-004,IAM-004,Sales manager,Approved,CRM write access,Synthetic approval record
+APR-005,IAM-005,HR manager + Sales manager,Approved,Mover HR -> Sales,Synthetic dual approval
+APR-006,IAM-006,Finance manager + HR manager,Approved,Mover Finance -> HR,Synthetic dual approval
+APR-007,IAM-007,Authorized HR,Approved,Immediate termination,Synthetic HR authorization
+APR-008,IAM-008,Authorized HR,Approved,Standard offboarding,Synthetic HR authorization
+APR-009,IAM-010,IT manager,Approved,Helpdesk group only; explicitly no Global Admin,Synthetic least-privilege approval
+APR-010,IAM-012,Finance manager,Approved,Finance shared mailbox FullAccess,Synthetic approval
+APR-011,IAM-013,HR manager,Approved,Remove HR shared mailbox access after mover,Synthetic approval
+APR-012,IAM-014,IT manager,Approved,M365 license assignment/reclamation,Synthetic approval

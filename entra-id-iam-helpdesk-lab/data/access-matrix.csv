@@ -1,0 +1,11 @@
+Department,GroupName,AccessPurpose,ApprovalRequired,AssignmentRule
+Finance,SG-FIN-Users,Baseline department access,Manager approval,All Finance
+People Operations,SG-HR-Users,Baseline department access,Manager approval,All HR
+Sales,SG-SALES-Users,Baseline department access,Manager approval,All Sales
+Engineering,SG-ENG-Users,Baseline department access,Manager approval,All Engineering
+IT,SG-IT-Users,Baseline department access,IT manager approval,All IT
+Finance,SG-FIN-Payments-Approvers,Sensitive payment approval,Finance director approval,Selected Finance only
+People Operations,SG-HR-Confidential,Confidential HR access,HR director approval,Selected HR only
+Sales,SG-SALES-CRM-Write,CRM write access,Sales manager approval,Sales roles needing write
+Engineering,SG-ENG-DevOps-Contributors,Deployment contributor access,Engineering lead approval,DevOps/approved engineers
+IT,SG-IT-Helpdesk,Helpdesk administration scope,IT manager approval,Helpdesk/IAM only

@@ -1,0 +1,28 @@
+EmployeeId,GroupName,AccessClass,RequiredApproval,ApprovalReference
+NSG001,SG-FIN-Users,Baseline,Manager approval,IAM-BASELINE
+NSG002,SG-FIN-Users,Baseline,Manager approval,IAM-BASELINE
+NSG003,SG-FIN-Users,Baseline,Manager approval,IAM-BASELINE
+NSG004,SG-HR-Users,Baseline,Manager approval,IAM-BASELINE
+NSG005,SG-HR-Users,Baseline,Manager approval,IAM-BASELINE
+NSG006,SG-HR-Users,Baseline,Manager approval,IAM-BASELINE
+NSG007,SG-SALES-Users,Baseline,Manager approval,IAM-BASELINE
+NSG008,SG-SALES-Users,Baseline,Manager approval,IAM-BASELINE
+NSG009,SG-SALES-Users,Baseline,Manager approval,IAM-BASELINE
+NSG010,SG-SALES-Users,Baseline,Manager approval,IAM-BASELINE
+NSG011,SG-ENG-Users,Baseline,Manager approval,IAM-BASELINE
+NSG012,SG-ENG-Users,Baseline,Manager approval,IAM-BASELINE
+NSG013,SG-ENG-Users,Baseline,Manager approval,IAM-BASELINE
+NSG014,SG-ENG-Users,Baseline,Manager approval,IAM-BASELINE
+NSG015,SG-IT-Users,Baseline,IT manager approval,IAM-BASELINE
+NSG016,SG-IT-Users,Baseline,IT manager approval,IAM-BASELINE
+NSG017,SG-IT-Users,Baseline,IT manager approval,IAM-BASELINE
+NSG018,SG-IT-Users,Baseline,IT manager approval,IAM-BASELINE
+NSG019,SG-FIN-Users,Baseline,Manager approval,IAM-001
+NSG020,SG-SALES-Users,Baseline,Manager approval,IAM-002
+NSG003,SG-FIN-Payments-Approvers,Sensitive,Finance director approval,IAM-APPROVED-SEED
+NSG006,SG-HR-Confidential,Sensitive,HR director approval,IAM-APPROVED-SEED
+NSG010,SG-SALES-CRM-Write,Sensitive,Sales manager approval,IAM-APPROVED-SEED
+NSG013,SG-ENG-DevOps-Contributors,Sensitive,Engineering lead approval,IAM-APPROVED-SEED
+NSG015,SG-IT-Helpdesk,Privileged support scope,IT manager approval,IAM-010
+NSG016,SG-IT-Helpdesk,Privileged support scope,IT manager approval,IAM-APPROVED-SEED
+NSG018,SG-IT-Helpdesk,Privileged support scope,IT manager approval,IAM-APPROVED-SEED

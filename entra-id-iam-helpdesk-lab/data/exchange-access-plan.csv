@@ -1,0 +1,3 @@
+MailboxAlias,MailboxType,UserEmployeeId,Permission,TicketId,RequiredApproval,DesiredState
+finance.shared,Shared,NSG002,FullAccess,IAM-012,Finance manager,Granted
+hr.shared,Shared,NSG005,FullAccess,IAM-013,HR manager,Removed

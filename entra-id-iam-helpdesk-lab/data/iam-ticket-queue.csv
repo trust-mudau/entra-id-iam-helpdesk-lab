@@ -1,0 +1,16 @@
+TicketId,RequestType,Priority,Requester,TargetUser,Department,Request,Approval,TargetSLA,Status
+IAM-001,Onboarding,P3,HR,Tumi Sibiya,Finance,Create account; baseline Finance access; M365 license,Finance manager,4h,Designed
+IAM-002,Onboarding,P2,HR,Rethabile Moagi,Sales,Start-day account and Sales access,Sales manager,1h,Designed
+IAM-003,Access Request,P3,Naledi Khumalo,Tumi Sibiya,Finance,Request payment approver access,Finance director,4h,Designed
+IAM-004,Access Request,P3,Jason Smith,Sipho Ndlovu,Sales,Grant CRM write access,Sales manager,4h,Designed
+IAM-005,Mover,P3,HR,Karabo Molefe,People Operations -> Sales,Remove HR groups; add Sales baseline,HR + Sales managers,4h,Designed
+IAM-006,Mover,P3,HR,Thabo Nkosi,Finance -> People Operations,Remove Finance; add HR; verify no finance residue,Finance + HR managers,4h,Designed
+IAM-007,Termination,P1,HR,Lwazi Mthembu,Sales,Immediate termination; block sign-in and remove access,Authorized HR,15m,Designed
+IAM-008,Termination,P2,HR,Amina Jacobs,Finance,Standard offboarding,Authorized HR,1h,Designed
+IAM-009,Group Audit,P4,IT Governance,All users,All,Review department memberships against HR source,IT manager,1d,Designed
+IAM-010,Privileged Access,P3,IT Manager,Lebo Radebe,IT,Grant helpdesk role/group only; no Global Admin,IT manager,4h,Designed
+IAM-011,Access Removal,P2,Security,Neo Motloung,Engineering,Remove unapproved DevOps contributor access,Engineering manager,1h,Designed
+IAM-012,Mailbox Permission,P3,Finance Manager,Thabo Nkosi,Finance,Grant approved shared mailbox delegation,Finance manager,4h,Designed
+IAM-013,Mailbox Permission,P3,HR,Karabo Molefe,Mover,Remove prior HR shared mailbox access,HR manager,4h,Designed
+IAM-014,License Change,P3,IT,Faith Zwane,IT,Assign/reclaim Microsoft 365 license per scenario,IT manager,4h,Designed
+IAM-015,Security Incident,P1,Security,Disabled user scenario,N/A,Detect residual group access after disablement and remediate,IT manager,15m,Designed
