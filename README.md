@@ -1,15 +1,17 @@
 # Microsoft Entra ID / Microsoft 365 IAM Helpdesk Lab
 
+[![IAM lab repository validation](https://github.com/trust-mudau/entra-id-iam-helpdesk-lab/actions/workflows/validate.yml/badge.svg)](https://github.com/trust-mudau/entra-id-iam-helpdesk-lab/actions/workflows/validate.yml)
+
 > A recruiter-facing IAM service-desk portfolio project demonstrating identity lifecycle administration, access control, ticket discipline, Microsoft Graph PowerShell, Microsoft 365/Exchange workflows, access governance, and audit evidence.
 
 ## Current status
 
-**Design complete / hands-on tenant validation pending.** This repository does not present design documents or synthetic tickets as production experience.
+**Design complete / hands-on tenant validation pending.** Automated repository/data validation and PowerShell syntax checks are passing. This repository does not present design documents or synthetic tickets as production experience.
 
 Evidence labels used throughout:
 
 - **Designed** — documented but not executed.
-- **Synthetic validation** — exercised against fictional data only.
+- **Synthetic validation** — exercised against fictional data or automated technical checks.
 - **Lab validated** — executed in an owned/authorized Microsoft tenant and supported by sanitized evidence.
 - **Production validated** — not claimed by this project.
 
