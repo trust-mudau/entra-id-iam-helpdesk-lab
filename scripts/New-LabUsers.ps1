@@ -2,7 +2,8 @@
 param(
     [Parameter(Mandatory=$true)][string]$CsvPath,
     [Parameter(Mandatory=$true)][string]$TenantDomain,
-    [Parameter(Mandatory=$true)][securestring]$InitialPassword
+    [Parameter(Mandatory=$true)][securestring]$InitialPassword,
+    [string[]]$ExcludeEmployeeId = @()
 )
 
 $ErrorActionPreference='Stop'
@@ -10,6 +11,10 @@ Import-Module Microsoft.Graph.Users
 $plain=[System.Net.NetworkCredential]::new('', $InitialPassword).Password
 $users=Import-Csv $CsvPath
 foreach ($u in $users) {
+    if ($ExcludeEmployeeId -contains $u.EmployeeId) {
+        Write-Host "SKIP SCENARIO USER: $($u.EmployeeId) $($u.DisplayName)" -ForegroundColor DarkYellow
+        continue
+    }
     $upn=($u.Alias+'@'+$TenantDomain).ToLower()
     $existing=Get-MgUser -Filter "userPrincipalName eq '$upn'" -ErrorAction SilentlyContinue
     if ($existing) { Write-Host "SKIP: $upn exists" -ForegroundColor Yellow; continue }
