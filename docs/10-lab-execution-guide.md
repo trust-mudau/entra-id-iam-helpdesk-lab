@@ -27,13 +27,35 @@ Evidence:
 
 ## Lab 2 — Build the identity baseline
 
-**Objective:** create the fictional workforce and department/security groups.
+**Objective:** create the fictional workforce and department/security groups **without pre-creating the onboarding scenario users**.
+
+Reserve these users for the joiner tickets:
+- `NSG019` — Tumi Sibiya (`IAM-001`)
+- `NSG020` — Rethabile Moagi (`IAM-002`)
 
 Actions:
-- Run `scripts/New-LabUsers.ps1` against `data/users.csv`.
-- Run `scripts/Initialize-LabGroups.ps1` against `data/access-matrix.csv`.
-- Run `scripts/Set-LabGroupMemberships.ps1` against `data/group-membership-plan.csv`.
-- Verify user attributes and group membership independently.
+
+```powershell
+$InitialPassword = Read-Host "Temporary lab password" -AsSecureString
+$ScenarioJoiners = @('NSG019','NSG020')
+
+.\scripts\New-LabUsers.ps1 `
+  -CsvPath .\data\users.csv `
+  -TenantDomain YOURTENANT.onmicrosoft.com `
+  -InitialPassword $InitialPassword `
+  -ExcludeEmployeeId $ScenarioJoiners
+
+.\scripts\Initialize-LabGroups.ps1 `
+  -AccessMatrixCsv .\data\access-matrix.csv
+
+.\scripts\Set-LabGroupMemberships.ps1 `
+  -MembershipPlanCsv .\data\group-membership-plan.csv `
+  -UsersCsv .\data\users.csv `
+  -TenantDomain YOURTENANT.onmicrosoft.com `
+  -ExcludeEmployeeId $ScenarioJoiners
+```
+
+Then verify user attributes and group membership independently.
 
 Evidence:
 - user export;
@@ -104,7 +126,7 @@ Actions:
 3. Disable sign-in first.
 4. Revoke sign-in sessions.
 5. Remove direct group memberships that are safe to remove.
-6. Reclaim direct licenses only if your lab policy calls for it.
+6. Reclaim **directly assigned** licenses only if your lab policy calls for it; group-based licenses are handled through group membership.
 7. Handle Exchange mailbox/delegation separately if licensed.
 8. Verify the account is disabled and the target groups no longer contain the user.
 9. Calculate completion minutes against the 15-minute lab SLA.
