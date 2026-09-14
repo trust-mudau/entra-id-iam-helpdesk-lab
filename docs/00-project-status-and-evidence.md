@@ -1,11 +1,28 @@
 # Project Status and Evidence Standard
 
-## Current default state
+## Current state
 
-Everything starts as **Designed** until executed in the lab.
+The repository design is complete and automated preflight validation is active. **Live Microsoft tenant execution is still pending.**
 
-| Workstream | Initial status | Completion evidence |
+### Automated preflight — passed
+
+On 14 September 2026, GitHub Actions successfully executed:
+
+- repository data/ticket validation;
+- PowerShell syntax parsing across every `.ps1` file.
+
+The repository validator returned:
+
+`OK: 20 users, 10 groups, 27 planned memberships, 15 tickets.`
+
+This is **synthetic/technical validation only**. It does not upgrade Entra ID, Microsoft 365, Exchange Online, joiner/mover/leaver, or governance tasks to **Lab validated** until those changes are executed in an owned/authorized Microsoft tenant and evidence is captured.
+
+## Workstream status
+
+| Workstream | Current status | Completion evidence |
 |---|---|---|
+| Repository/data integrity | Synthetic validation passed | Successful GitHub Actions validation run |
+| PowerShell syntax | Synthetic validation passed | Successful CI parsing of all `.ps1` files |
 | Tenant setup | Designed | Tenant overview screenshot with sensitive values redacted |
 | Fictional users | Designed | Sanitized user export + sample screenshots |
 | Department groups | Designed | Group export + membership evidence |
@@ -28,6 +45,13 @@ A task is **Lab validated** only if all of the following exist:
 5. Evidence is sanitized and stored.
 6. The ticket records completion time and outcome.
 7. Any failure, rollback, or exception is documented.
+
+## Evidence labels
+
+- **Designed** — documented but not executed.
+- **Synthetic validation** — exercised against fictional data or automated static checks.
+- **Lab validated** — executed in an owned/authorized Microsoft tenant with sanitized proof.
+- **Production validated** — not claimed by this repository.
 
 ## What this project does not claim
 
