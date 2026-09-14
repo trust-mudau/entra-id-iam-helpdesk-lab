@@ -2,7 +2,8 @@
 param(
     [Parameter(Mandatory=$true)][string]$MembershipPlanCsv,
     [Parameter(Mandatory=$true)][string]$UsersCsv,
-    [Parameter(Mandatory=$true)][string]$TenantDomain
+    [Parameter(Mandatory=$true)][string]$TenantDomain,
+    [string[]]$ExcludeEmployeeId = @()
 )
 
 $ErrorActionPreference='Stop'
@@ -12,6 +13,10 @@ Import-Module Microsoft.Graph.Users
 $users = Import-Csv $UsersCsv
 $plan = Import-Csv $MembershipPlanCsv
 foreach ($p in $plan) {
+    if ($ExcludeEmployeeId -contains $p.EmployeeId) {
+        Write-Host "SKIP SCENARIO MEMBERSHIP: $($p.EmployeeId) -> $($p.GroupName)" -ForegroundColor DarkYellow
+        continue
+    }
     $source=$users | Where-Object EmployeeId -eq $p.EmployeeId
     if (-not $source) { Write-Warning "Employee not found in source: $($p.EmployeeId)"; continue }
     $upn=($source.Alias+'@'+$TenantDomain).ToLower()
